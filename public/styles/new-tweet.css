@@ -1,0 +1,25 @@
+.tweetbutton {
+  background-color: blue;
+  color: #f4f1ec;
+  font-family: 'Bungee', cursive;
+  
+}
+
+span.counter {
+  font-family: 'Bungee', cursive;
+  float: right;
+}
+
+form {
+  align-content: center;
+}
+
+.textbox {
+  background-color: #f4f1ec;
+  border: 0;
+  width: 30%;
+  height: 35px;
+  resize: none;
+  min-width: 50%;
+}
+
