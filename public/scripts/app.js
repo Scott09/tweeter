@@ -18,8 +18,8 @@ $(document).ready(function() {
       <p class="tweetcontent"><img class ="tweeticon" src="${data.user.avatars}" alt="okay">${data.user.name}<span class="spanright">${data.user.handle}</span></p>
       <p class="tweetcontent">${$innertext}</p>
       <hr class="row" />
-
-      <p class="tweetcontent date">${new Date(data.created_at)}</p>
+    
+      <p class="tweetcontent date">${moment(new Date(data.created_at)).fromNow()}<i class="far fa-thumbs-up"><i class="fas fa-retweet"></i></i><i class="fas fa-flag"></i></p>
     </div>
     `;
 
