@@ -1,8 +1,9 @@
 $(document).ready(function() {
   console.log("char counter ready");
-
+  
   const mytextarea = $('.textbox');
   $('.counter').html('140');
+
 
   mytextarea.on('keyup', () => {
     let boxlength = mytextarea.val().length;
@@ -15,8 +16,5 @@ $(document).ready(function() {
       $('.counter').css("color", "black");
     }
   });
-
-
-
 
 });

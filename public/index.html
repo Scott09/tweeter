@@ -24,6 +24,9 @@
   <script type="text/javascript" src="/scripts/app.js"></script>
 
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+
+
 </head>
 
 <body>
@@ -31,54 +34,44 @@
   <!-- Top nav bar (fixed) -->
   <div class="navbar">
     <nav>
-      <span class="navtitle">tweeter</span><span class="navtitleright">Create a new tweet</span>
+      <span class="navtitle">tweeter</span><span class="navtitleright">Create a new tweet</span><div class="doublearrow"><img src="https://cdn0.iconfinder.com/data/icons/outline-arrow/32/arrow23-512.png" alt="arrow" style="height: 50px"></div>
     </nav>
   </div>
 
   <header>
     <div class="headerdiv">
-        <img src="/images/profile-hex.png"> 
+      <img src="/images/profile-hex.png">
     </div>
     <br>
     <div>
-        <h2>Scott A</h2>
+      <h2>Scott A</h2>
     </div>
-</header>
+  </header>
 
   
   <!-- Page-specific (main) content here -->
   <main class="container">
 
-      <section class="new-tweet">
-          <h2>Compose Tweet</h2>
-          <form action="/tweets/" method="POST">
-            <textarea class="textbox" name="text" placeholder="What are you humming about?"></textarea>
-            <hr>
-            <input class="tweetbutton" type="submit" value="Tweet">
-            <span class="counter"></span>
-          </form>
-        </section>
+    <section class="error">
+      <p>Error: Please make sure your tweet isn't empty or over 140 characters</p>
+    </section>
+    
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form class="tweetform" action="/tweets/" method="POST">
+        <textarea class="textbox" name="text" placeholder="What are you humming about?"></textarea>
+        <hr>
+        <input class="tweetbutton" type="submit" value="Tweet">
+        <span class="counter"></span>
+      </form>
+    </section>
+
+   
+
+    <div id="tweets-container">
       
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi id aspernatur recusandae doloremque et praesentium,
-          laborum vel dolor, reiciendis reprehenderit iure est placeat possimus voluptatem! Magnam corporis quis ea
-          voluptatum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat nostrum quibusdam enim esse
-          excepturi culpa alias a omnis dolores hic tempore sed nisi maiores voluptate mollitia, aut iure </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi velit repellendus molestias, rem cumque molestiae
-          mollitia blanditiis eum vel enim autem atque optio alias accusantium ad. Minima facilis magni omnis?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, saepe aut eos minus provident sequi quam
-          quisquam a! Illum molestias ratione ut impedit ex fugit blanditiis aliquam, fuga minus ab.</p>
-    
-    
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, quia reiciendis cumque doloribus id inventore quam
-          harum esse sapiente culpa eum corrupti pariatur consequatur suscipit molestias cupiditate vero corporis iusto!</p>
-    
-    
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident hic ducimus sequi fuga nemo, impedit quaerat
-          architecto consequuntur vero labore repellat aperiam reiciendis dolore quam deleniti. Odio minus distinctio autem.
-        </p>
-    
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe neque harum culpa. Ab harum expedita at alias amet
-          in similique, iste blanditiis voluptates repellendus cumque nobis cupiditate pariatur rerum doloremque!</p>
+    </div>
+
   </main>
 
 </body>
