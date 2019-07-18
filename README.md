@@ -18,4 +18,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ##ScreenShots
 
-!(tweeter/public/images/ss1.png "Optional Title")
+![Imgur](https://i.imgur.com/sSYZMSV.png)
+![Imgur](https://i.imgur.com/GUXWtCK.png)
+![Imgur](https://i.imgur.com/vEn7qdw.png)
+
