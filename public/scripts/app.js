@@ -6,8 +6,8 @@
 
 $(document).ready(function() {
 
-  
   $('.error').hide();
+  $('.new-tweet').hide();
   
 
   const createTweetElement = (data) => {
@@ -62,6 +62,7 @@ $(document).ready(function() {
           success: () => {
             $('.error').hide();
             loadtweets();
+            $('.textbox').val('');
           }
         })
       }
@@ -76,7 +77,9 @@ $(document).ready(function() {
   }
 
   $('.navtitleright').on('click', () => {
-    $('.new-tweet').fadeToggle(800);
+    $('.new-tweet').fadeToggle(1000);
+    $('.textbox').focus();
+
   });
 
   loadtweets();

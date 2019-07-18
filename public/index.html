@@ -13,9 +13,7 @@
 
   <!-- App CSS -->
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
 
   <!-- External JS -->
   <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -30,50 +28,54 @@
 </head>
 
 <body>
+  <div class="wrap">
+    <!-- Top nav bar (fixed) -->
+    <div class="one">
+      <div class="navbar">
+        <nav>
+          <span class="navtitle">tweeter</span><span class="navtitleright">Create a new tweet</span>
+        </nav>
+      </div>
 
-  <!-- Top nav bar (fixed) -->
-  <div class="navbar">
-    <nav>
-      <span class="navtitle">tweeter</span><span class="navtitleright">Create a new tweet</span><div class="doublearrow"><img src="https://cdn0.iconfinder.com/data/icons/outline-arrow/32/arrow23-512.png" alt="arrow" style="height: 50px"></div>
-    </nav>
+      <header>
+        <div class="headerdiv">
+          <img src="/images/profile-hex.png">
+        </div>
+        <br>
+        <div>
+          <h2>Scott A</h2>
+        </div>
+      </header>
+    </div>
+
+
+    <!-- Page-specific (main) content here -->
+    <div class="two">
+      <main class="container">
+
+        <section class="error">
+          <p>Error: Please make sure your tweet isn't empty or over 140 characters</p>
+        </section>
+
+        <section class="new-tweet">
+         
+          <form class="tweetform" action="/tweets/" method="POST">
+            <textarea class="textbox" name="text" placeholder="What are you humming about?"></textarea>
+            <hr>
+            <input class="tweetbutton" type="submit" value="Tweet">
+            <span class="counter"></span>
+          </form>
+        </section>
+
+
+
+        <div id="tweets-container">
+
+        </div>
+
+      </main>
+    </div>
   </div>
-
-  <header>
-    <div class="headerdiv">
-      <img src="/images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h2>Scott A</h2>
-    </div>
-  </header>
-
-  
-  <!-- Page-specific (main) content here -->
-  <main class="container">
-
-    <section class="error">
-      <p>Error: Please make sure your tweet isn't empty or over 140 characters</p>
-    </section>
-    
-    <section class="new-tweet">
-      <h2>Compose Tweet</h2>
-      <form class="tweetform" action="/tweets/" method="POST">
-        <textarea class="textbox" name="text" placeholder="What are you humming about?"></textarea>
-        <hr>
-        <input class="tweetbutton" type="submit" value="Tweet">
-        <span class="counter"></span>
-      </form>
-    </section>
-
-   
-
-    <div id="tweets-container">
-      
-    </div>
-
-  </main>
-
 </body>
 
 </html>
