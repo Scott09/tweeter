@@ -130,6 +130,7 @@ form {
   margin-bottom: 25px;
   border-radius: 25px;
   border-color: lightskyblue;
+  word-wrap: break-word;
 }
 
 span.spanright {
