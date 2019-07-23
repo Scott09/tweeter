@@ -92,6 +92,7 @@ h2 {
   float: right;
   color: white;
   font-family: 'Bungee', cursive;
+  cursor: pointer;
 }
 
 nav {
