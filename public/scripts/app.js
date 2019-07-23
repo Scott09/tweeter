@@ -32,7 +32,7 @@ $(document).ready(function() {
   const renderTweets = (data) => {
     $("#tweets-container").empty();
     for (const item of data) {
-      $("#tweets-container").append(createTweetElement(item));
+      $("#tweets-container").prepend(createTweetElement(item));
     }
   }
 
