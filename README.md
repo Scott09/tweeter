@@ -20,7 +20,7 @@ Tweeter is a simple, single-page Twitter clone.
 
 ##ScreenShots
 
-![Imgur](https://i.imgur.com/sSYZMSV.png)
+![Imgur](https://i.imgur.com/kOE55Ln.png)
 ![Imgur](https://i.imgur.com/GUXWtCK.png)
 ![Imgur](https://i.imgur.com/vEn7qdw.png)
 
